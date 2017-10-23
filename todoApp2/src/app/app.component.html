@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor='let tarea of listadoTareas' (click)='selectTarea(tarea)'>
+    {{tarea.titulo}}
+  </li>
+</ul>
+
+<app-detalle-tarea [nacho]="tareaSeleccionada"></app-detalle-tarea>

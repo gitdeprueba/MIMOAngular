@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<ul>
+  <li *ngFor="let laura of tiposDeLaura" (click)='setSelectedLaura(laura)'>
+    {{laura.nombre}}
+  </li>
+</ul>
+
+<app-detalles-laura [Laura]="lauraSeleccionada"></app-detalles-laura>
